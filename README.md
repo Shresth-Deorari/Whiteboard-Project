@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Whiteboard Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A dynamic web-based whiteboard application that allows users to create, edit, and share drawings with a natural hand-drawn feel.
+## 🎨 Overview
 
-## Available Scripts
+Whiteboard Project is an interactive canvas application that provides a seamless drawing experience with a natural, hand-drawn aesthetic. Built with modern web technologies, it offers a comprehensive set of tools for creative expression and collaboration.
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- **Free-hand Drawing**: Create fluid, natural drawings with pressure sensitivity support
+- **Hand-drawn Aesthetic**: Integration with Rough.js to give drawings an authentic sketch-like appearance
+- **Shape Tools**: Easily create lines, rectangles, ellipses with customizable properties
+- **Text Support**: Add and edit text boxes anywhere on the canvas
+- **Advanced Controls**:
+  - Eraser tool for precise corrections
+  - Unlimited undo/redo capabilities powered by Context API
+  - Selection tool to modify existing elements
+- **Export Functionality**: Save your creations as PNG images
+- **Responsive Design**: Works across devices with different screen sizes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React.js
+- HTML5 Canvas
+- Rough.js
+- Context API for state management
+- Modern JavaScript (ES6+)
 
-### `npm test`
+## 💡 Implementation Challenges & Solutions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Undo/Redo Functionality
+Implemented a robust history tracking system using React's Context API to maintain the state of the canvas at different points in time, enabling seamless undo and redo operations.
 
-### `npm run build`
+### Eraser Tool
+Created a custom solution for detecting intersections between the eraser path and existing elements on the canvas, with special handling for different element types.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Text Component Erasure
+Developed a specialized approach to handle text element erasure, which required different logic than shape-based elements due to their complex rendering properties.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📦 Installation & Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Clone the repository
+```
+git clone https://github.com/Shresth-Deorari/Whiteboard-Project.git
+```
 
-### `npm run eject`
+### Navigate to project directory
+```
+cd Whiteboard-Project
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Install dependencies
+```
+npm i install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Start development server
+```
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🤝 Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Fork the repository
+   
+2. Create your feature branch
+```
+git checkout -b feature/amazing-feature
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Commit your changes
+```
+git commit -m 'Add some amazing feature'
+```
 
-### Code Splitting
+4. Push to the branch
+```
+git push origin feature/amazing-feature
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Open a Pull Request
 
-### Analyzing the Bundle Size
+## 📧 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Shresth Deorari - [GitHub](https://github.com/Shresth-Deorari)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Email: shresthdeorari38@gmail.com
